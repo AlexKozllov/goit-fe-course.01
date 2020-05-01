@@ -7,19 +7,50 @@
 
 .wrapper {
   width: 911px;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 0px;
 }
 
-.nav {
-  width: 73px;
-  height: 13px;
-  display: inline-block;
+.list_nav {
+  width: 911px;
+  list-style-type: none;
+  padding: 77px 0px 100px 0px;
+  /* padding-left: 0;
+  margin-left: 0; */
+}
+
+.link_lifestyle {
+  display: inline;
+  padding-left: 165px;
+}
+.link_photodiary {
+  display: inline;
+  padding-left: 122px;
+}
+.link_musik {
+  display: inline;
+  padding-left: 104px;
+}
+.link_travel {
+  display: inline;
+  padding-left: 94px;
+}
+
+.nav_link {
+  text-transform: uppercase;
+  text-align: center;
+  color: #626262;
+  text-decoration: none;
+}
+.nav_link:hover {
+  /* background: #786b59; Цвет фона под ссылкой  */
+  color: #03a9f4; /* Цвет ссылки */
 }
 
 .box {
   display: inline-block;
-  width: 421px;
-  height: 477px;
+  width: 420px;
+  height: 480px;
   /* background-color: blue; */
   /* padding-top: 124px; */
 }
@@ -31,19 +62,50 @@
 .right {
   margin: 0px 0px 127px 30px;
 }
-
-.head2 {
-  /* font-family: Arial; */
-  color: #626262;
-  font-size: 30px;
+.down {
+  margin-bottom: 0px;
 }
 
-.article {
+.my_h2 {
+  color: #626262;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.my_article {
+  /* font-family: 'Roboto', sans-serif; */
   color: #626262;
   font-size: 14px;
+  padding: 36px 0px 0px 0px;
 }
 
 .insctiption {
+  font-family: "Roboto", sans-serif;
   color: #b4ad9e;
   font-size: 14px;
+  text-transform: uppercase;
+  padding: 33px 0px 25px 0px;
+}
+
+.my_footer {
+  margin-top: 55px;
+  margin-bottom: 70px;
+}
+.button_box {
+  width: 164px;
+  height: 62px;
+  margin: 0 auto;
+  border: 1px solid #626262;
+  text-align: center;
+  padding-top: 0%;
+  /* padding-top: 16px; */
+}
+.button {
+  /* width: 164px;
+  height: 62px; */
+  display: block;
+  margin: 20px;
+  color: #626262;
+  font-size: 20px;
+  text-decoration: none;
 }
