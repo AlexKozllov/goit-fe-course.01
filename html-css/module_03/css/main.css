@@ -2,5 +2,48 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+}
+
+.wrapper {
+  width: 911px;
+  margin: auto;
+}
+
+.nav {
+  width: 73px;
+  height: 13px;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  width: 421px;
+  height: 477px;
+  /* background-color: blue; */
+  /* padding-top: 124px; */
+}
+
+.left {
+  margin: 0px 30px 127px 0px;
+}
+
+.right {
+  margin: 0px 0px 127px 30px;
+}
+
+.head2 {
+  /* font-family: Arial; */
+  color: #626262;
+  font-size: 30px;
+}
+
+.article {
+  color: #626262;
+  font-size: 14px;
+}
+
+.insctiption {
+  color: #b4ad9e;
+  font-size: 14px;
 }
