@@ -11,6 +11,9 @@
   padding-top: 0px;
 }
 
+.inline {
+  display: flex;
+}
 .list_nav {
   width: 911px;
   list-style-type: none;
@@ -54,11 +57,9 @@
   /* background-color: blue; */
   /* padding-top: 124px; */
 }
-
 .left {
   margin: 0px 30px 127px 0px;
 }
-
 .right {
   margin: 0px 0px 127px 30px;
 }
@@ -99,6 +100,21 @@
   text-align: center;
   padding-top: 0%;
   /* padding-top: 16px; */
+}
+.button:hover {
+  /* background: #786b59; Цвет фона под ссылкой  */
+  color: #03a9f4;
+  /* Цвет ссылки */
+}
+.button_box:hover {
+  width: 164px;
+  height: 62px;
+  margin: 0 auto;
+  border: 1px solid #03a9f4;
+  text-align: center;
+  padding-top: 0%;
+  /* background: #786b59; Цвет фона под ссылкой  */
+  /* color: #03a9f4;  */
 }
 .button {
   /* width: 164px;
