@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  /* box-sizing: border-box; */
+  font-family: Playfair Display;
 }
 
 .wrapper {
@@ -18,8 +18,6 @@
   width: 911px;
   list-style-type: none;
   padding: 77px 0px 100px 0px;
-  /* padding-left: 0;
-  margin-left: 0; */
 }
 
 .link_lifestyle {
@@ -46,22 +44,19 @@
   text-decoration: none;
 }
 .nav_link:hover {
-  /* background: #786b59; Цвет фона под ссылкой  */
-  color: #03a9f4; /* Цвет ссылки */
+  color: #03a9f4;
 }
 
 .box {
   display: inline-block;
   width: 420px;
   height: 480px;
-  /* background-color: blue; */
-  /* padding-top: 124px; */
 }
 .left {
-  margin: 0px 30px 127px 0px;
+  margin: 0px 30px 107px 0px;
 }
 .right {
-  margin: 0px 0px 127px 30px;
+  margin: 0px 0px 107px 30px;
 }
 .down {
   margin-bottom: 0px;
@@ -74,10 +69,9 @@
 }
 
 .my_article {
-  /* font-family: 'Roboto', sans-serif; */
   color: #626262;
   font-size: 14px;
-  padding: 36px 0px 0px 0px;
+  padding: 33px 0px 0px 0px;
 }
 
 .insctiption {
@@ -85,43 +79,26 @@
   color: #b4ad9e;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 33px 0px 25px 0px;
+  padding: 26px 0px 17px 0px;
 }
 
 .my_footer {
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 70px;
 }
-.button_box {
-  width: 164px;
-  height: 62px;
-  margin: 0 auto;
-  border: 1px solid #626262;
-  text-align: center;
-  padding-top: 0%;
-  /* padding-top: 16px; */
-}
-.button:hover {
-  /* background: #786b59; Цвет фона под ссылкой  */
+
+.my_button:hover {
   color: #03a9f4;
-  /* Цвет ссылки */
+  border: 1px solid #03a9f4;
 }
-.button_box:hover {
+
+.my_button {
   width: 164px;
   height: 62px;
-  margin: 0 auto;
-  border: 1px solid #03a9f4;
-  text-align: center;
-  padding-top: 0%;
-  /* background: #786b59; Цвет фона под ссылкой  */
-  /* color: #03a9f4;  */
-}
-.button {
-  /* width: 164px;
-  height: 62px; */
+  border: 1px solid #626262;
   display: block;
-  margin: 20px;
+  margin: 20px auto 20px;
   color: #626262;
   font-size: 20px;
-  text-decoration: none;
+  background-color: #ffffff;
 }
