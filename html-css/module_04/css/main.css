@@ -1,6 +1,6 @@
 * {
-  /* box-sizing: content-box;
-  box-sizing: border-box; */
+  box-sizing: content-box;
+  /* box-sizing: border-box; */
 
   margin: 0;
   padding: 0;
@@ -9,21 +9,45 @@
 }
 
 .wrapper {
-  width: 1110px;
-  margin: 0 auto;
+  width: 1130px;
+  margin: 27px auto;
   padding-top: 0px;
 }
 .my_h1 {
-  width: 120px;
-  height: 120px;
-  margin: 20px 0px 0px 20px;
-  padding-top: 20px;
-  text-align: center, center;
+  margin-left: 0px;
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Calibri";
-  color: rgb(26, 188, 156);
+  color: #555252;
+  float: left;
+}
+.my_h1:first-letter {
+  color: #1abc9c;
+}
+
+.link {
+  margin-top: 11px;
+  margin-right: 34px;
   text-transform: uppercase;
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 14px;
+  float: left;
 }
-.mart {
+.list_link:first-child {
+  margin-left: 648px;
 }
+.link:nth-child(3) {
+  margin-right: 32px;
+}
+.link:nth-child(4) {
+  margin-right: 28px;
+}
+.link:nth-child(5) {
+  margin-right: 32px;
+}
+.link:last-child{
+ margin-right: 0;
+}
+  
