@@ -132,3 +132,49 @@
 .item_list:hover .prise {
   background-color: #7fd9c7;
 }
+
+.news {
+  width: 350px;
+  height: 500px;
+  list-style-type: none;
+  float: left;
+  margin-top: 53px;
+  margin-right: 32px;
+}
+.news:last-child {
+  margin-right: 0;
+}
+
+.my_h3 {
+  margin-top: 5px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #555252;
+  line-height: 26px;
+  letter-spacing: -0.017em;
+}
+.Lorem_Ipsum__Proin_gravida_nibh_vel_velit_aucto {
+  font-family: "Open Sans";
+}
+
+.line_h3 {
+  margin-top: 5px;
+  display: block;
+}
+
+.articlt_news {
+  font-size: 14px;
+  font-family: "Open Sans Regular";
+  color: #555252;
+  line-height: 1.857;
+  margin-top: 25px;
+  letter-spacing: -0.045em;
+}
+
+.button {
+  width: 159px;
+  height: 51px;
+  background-color: #4ec6ab;
+  border-radius: 4px;
+  margin-top: 15px;
+}
