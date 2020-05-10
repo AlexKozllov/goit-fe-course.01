@@ -17,12 +17,15 @@
   margin-left: 0px;
   text-transform: uppercase;
   font-size: 30px;
-  font-family: "Calibri";
+  margin-top: 3px;
+
+  font-family: "Roboto";
   color: #555252;
   float: left;
 }
 .my_h1:first-letter {
   color: #1abc9c;
+  font-weight: bolder;
 }
 
 .link {
@@ -42,10 +45,11 @@
   margin-left: 648px;
 }
 .link:nth-child(3) {
+  margin-left: 2px;
   margin-right: 32px;
 }
 .link:nth-child(4) {
-  margin-right: 28px;
+  margin-right: 26px;
 }
 .link:nth-child(5) {
   margin-right: 32px;
@@ -58,7 +62,7 @@
 }
 
 .my_h2 {
-  margin-top: 101px;
+  margin-top: 98px;
   font-size: 48px;
   font-family: "Roboto black";
   font-weight: 900;
@@ -69,14 +73,14 @@
   height: 35px;
   letter-spacing: -0.017em;
 }
-
-.line_h2 {
+.my_h2:after {
   display: block;
-  margin: 30px auto;
+  content: "________";
+  color: #1abc9c;
 }
 
 .product_list {
-  margin-right: 0;
+  margin-top: 65px;
 }
 
 .item_list {
@@ -138,7 +142,7 @@
   height: 500px;
   list-style-type: none;
   float: left;
-  margin-top: 53px;
+  margin-top: 118px;
   margin-right: 32px;
 }
 .news:last-child {
@@ -153,13 +157,12 @@
   line-height: 26px;
   letter-spacing: -0.017em;
 }
-.Lorem_Ipsum__Proin_gravida_nibh_vel_velit_aucto {
-  font-family: "Open Sans";
-}
-
-.line_h3 {
-  margin-top: 5px;
+.my_h3:after {
   display: block;
+  content: "___________";
+  font-size: 28px;
+  color: #1abc9c;
+  margin-top: -21px;
 }
 
 .articlt_news {
@@ -177,4 +180,24 @@
   background-color: #4ec6ab;
   border-radius: 4px;
   margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.but_link {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  color: #ffffff;
+  line-height: 1.625;
+  padding-left: 10px;
+}
+.latest_news {
+  margin-bottom: 40px;
+  margin-top: 106px;
+}
+.inline {
+  display: flex;
 }
