@@ -97,3 +97,38 @@
 .item_list:nth-child(n + 5) {
   margin-top: 27px;
 }
+
+.name,
+.prise {
+  font-family: "Roboto black";
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+  font-size: 18px;
+  /* line-height: 1.778; */
+  letter-spacing: -0.017em;
+  padding-top: 2px;
+
+  display: flex;
+  align-items: center;
+}
+.name {
+  width: 185px;
+  height: 40px;
+  background-color: #323232;
+
+  padding-left: 15px;
+}
+.prise {
+  width: 54px;
+  height: 40px;
+  background-color: #8c8c8c;
+  /* text-align: center; */
+  justify-content: center;
+}
+.item_list:hover .name {
+  background-color: #1abc9c;
+}
+.item_list:hover .prise {
+  background-color: #7fd9c7;
+}
