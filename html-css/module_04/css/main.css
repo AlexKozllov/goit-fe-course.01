@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -11,30 +11,41 @@
   margin: 27px auto;
   padding-top: 0px;
 }
+.clearfix {
+  clear: both;
+}
 
 .my_h1 {
   margin-left: 0px;
   text-transform: uppercase;
   font-size: 30px;
-  margin-top: 3px;
+  margin-top: 4px;
   font-family: "Roboto";
+  letter-spacing: -0.015em;
+  font-weight: 300;
+
   color: #555252;
   float: left;
 }
 .my_h1:first-letter {
   color: #1abc9c;
-  font-weight: bolder;
+  font-weight: 800;
+}
+.item_link {
+  float: left;
+  margin-top: 9px;
+  margin-right: 32px;
+  list-style-type: none;
 }
 
 .link {
-  margin-top: 11px;
-  margin-right: 34px;
+  text-decoration: none;
   text-transform: uppercase;
-  list-style-type: none;
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 14px;
-  float: left;
+  letter-spacing: -0.015em;
+  color: #0f0101;
 }
 .link:hover {
   color: #1abc9c;
@@ -42,52 +53,54 @@
 .list_link:first-child {
   margin-left: 648px;
 }
-.link:nth-child(3) {
-  margin-left: 2px;
-  margin-right: 32px;
+.item_link:nth-child(3) {
+  margin-left: 5px;
+  margin-right: 30px;
 }
-.link:nth-child(4) {
+.item_link:nth-child(4) {
   margin-right: 26px;
 }
-.link:nth-child(5) {
-  margin-right: 32px;
+.item_link:nth-child(5) {
+  margin-right: 33px;
 }
-.link:last-child {
+.item_link:last-child {
   margin-right: 0;
-}
-.clearfix {
-  clear: both;
 }
 
 .my_h2 {
-  margin-top: 98px;
+  margin-top: 96px;
+  margin-left: 6px;
   font-size: 48px;
-  font-family: "Roboto black";
+  font-family: "Roboto";
   font-weight: 900;
-  color: rgb(81, 81, 81);
+  color: #515151;
   text-transform: uppercase;
   text-align: center;
   line-height: 0.667;
   height: 35px;
-  letter-spacing: -0.017em;
+  letter-spacing: -0.019em;
 }
 .my_h2:after {
   display: block;
   content: "________";
   color: #1abc9c;
+  margin-left: -16px;
 }
-
+.h2_centet {
+  margin-left: -20px;
+}
 .product_list {
   margin-top: 65px;
 }
 
 .item_list {
   width: 255px;
-  height: 325px;
+  height: 322px;
   list-style-type: none;
   float: left;
-  margin-top: 61px;
-  margin-right: 31px;
+  margin-top: 66px;
+  margin-right: 29px;
+  margin-left: 2px;
   background-color: #e9f0fd;
 }
 .item_list:nth-child(4) {
@@ -97,18 +110,20 @@
   margin-right: 0px;
 }
 .item_list:nth-child(n + 5) {
-  margin-top: 27px;
+  margin-top: 30px;
 }
 
 .name,
 .prise {
-  font-family: "Roboto black";
+  font-family: "Roboto";
+  font-weight: 600;
+  margin-top: -4px;
   color: #fff;
   text-transform: uppercase;
   float: left;
   font-size: 18px;
   letter-spacing: -0.017em;
-  padding-top: 2px;
+  /* padding-top: 2px; */
   display: flex;
   align-items: center;
 }
@@ -118,8 +133,9 @@
   background-color: #323232;
   padding-left: 15px;
 }
+
 .prise {
-  width: 54px;
+  width: 55px;
   height: 40px;
   background-color: #8c8c8c;
   justify-content: center;
@@ -140,27 +156,32 @@
   height: 500px;
   list-style-type: none;
   float: left;
-  margin-top: 118px;
-  margin-right: 32px;
+  margin-top: 116px;
+  margin-right: 29px;
+  /* margin-left: 2px; */
+  padding-left: 2px;
 }
 .news:last-child {
   margin-right: 0;
 }
 
 .my_h3 {
-  margin-top: 5px;
+  width: 310px;
+  margin-top: 4px;
   font-family: "Open Sans";
+  font-weight: 600;
   font-size: 18px;
   color: #555252;
   line-height: 26px;
-  letter-spacing: -0.017em;
+  letter-spacing: -0.019em;
 }
 .my_h3:after {
   display: block;
-  content: "___________";
+  letter-spacing: -0.025em;
+  content: "____________";
   font-size: 28px;
   color: #1abc9c;
-  margin-top: -21px;
+  margin-top: -17px;
 }
 
 .articlt_news {
@@ -169,15 +190,16 @@
   color: #555252;
   line-height: 1.857;
   margin-top: 25px;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.019em;
+  line-height: 26px;
 }
 
 .but_link {
-  width: 150px;
+  width: 156px;
   height: 51px;
   background-color: #4ec6ab;
   border-radius: 4px;
-  margin-top: 15px;
+  margin-top: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +209,7 @@
   font-weight: lighter;
   color: #ffffff;
   line-height: 1.625;
-  padding-left: 10px;
+  padding-left: 3px;
 }
 .but_link:hover {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
