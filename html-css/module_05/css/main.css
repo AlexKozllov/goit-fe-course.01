@@ -5,6 +5,7 @@
   padding: 0;
   font-size: 100%;
 }
+
 @font-face {
   font-family: "Pe-icon-7-stroke";
   src: url("/fonts/Pe-icon-7-stroke.eot");
@@ -48,7 +49,7 @@ a {
   font-weight: 300;
   line-height: 1.067;
   letter-spacing: -0.019em;
-  left: 243px;
+  left: calc(50% - 557px);
 }
 .logo:first-letter {
   color: #1abc9c;
@@ -58,7 +59,7 @@ a {
 .menu_list {
   width: 468px;
   position: absolute;
-  right: 244px;
+  right: calc(50% - 556px);
   top: 5px;
   /* display: block; */
   /* margin-left: 561px; */
@@ -98,12 +99,14 @@ a {
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
-  padding-left: 27%;
+  padding-left: calc(50% - 370px);
 }
 main {
   background-size: 100% 100%;
   background-position: center center;
   background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .my_h2 {
   width: 100%;
@@ -114,6 +117,9 @@ main {
   line-height: 1.367;
   text-align: left;
   letter-spacing: -0.015em;
+}
+.slider:hover .first_word {
+  color: #ff7200;
 }
 .slider_text {
   margin-top: 12px;
@@ -129,7 +135,8 @@ main {
   position: absolute;
 
   opacity: 0.65;
-  left: 245px;
+  left: calc(50% - 555px);
+  /* left: 245px; */
   top: 225px;
   background-color: #1abc9c;
   width: 105px;
@@ -150,7 +157,7 @@ main {
 .arrow_right {
   position: absolute;
   opacity: 0.65;
-  right: 245px;
+  right: calc(50% - 555px);
   top: 225px;
   background-color: #1abc9c;
   width: 105px;
