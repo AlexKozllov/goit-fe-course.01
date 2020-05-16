@@ -208,26 +208,21 @@ a {
 .conteiner {
   margin-top: 90px;
   margin-left: calc(50% - 554px);
-  /* margin-left: 245px; */
+  width: 1110px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .product {
-  display: inline-flex;
-  margin-right: 26px;
   position: relative;
 }
-.product:last-child {
-  width: 255px;
-  height: 322px;
-  margin-right: 0;
-  list-style-type: none;
-}
+
 .caption {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
 }
-/* .caption:last-child {
-  bottom: 0;
-} */
+
 .item {
   /* display: inline-block; */
   float: left;
@@ -261,3 +256,66 @@ a {
   padding-top: 4px;
   padding-left: 10px;
 }
+
+/* Hover_box */
+
+.hover_box {
+  position: absolute;
+  width: 235px;
+  height: 260px;
+  background-color: #201d1e;
+  opacity: 0.55;
+  top: 10px;
+  left: calc(50% - 117px);
+}
+.btn_icon{
+  width: 50px;
+  height: 50px;
+
+  background-color: transparent;
+}
+.icon_box{
+  width: 165px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+.button_box{
+  width: 165px;
+  position: absolute;
+  left: calc(50% - 82px);
+  top: calc(50% - 53px);
+}
+.add_to_cart{
+  height: 50px;
+  width: 165px;
+}
+.heart::before {
+  content: "\e642";
+  font-size: 30px;
+  font-family: "Pe-icon-7-stroke";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.067;
+}
+.mix::before {
+  content: "\e614";
+  font-size: 30px;
+  font-family: "Pe-icon-7-stroke";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.067;
+}
+.clock::before {
+  content: "\e66b";
+  font-size: 30px;
+  font-family: "Pe-icon-7-stroke";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.067;
+}
+/*  */
+\e66e
+/*  */
