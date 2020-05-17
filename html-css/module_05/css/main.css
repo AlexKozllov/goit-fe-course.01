@@ -398,5 +398,8 @@ a {
   top: 30px;
 }
 .author {
+  color: #fff;
+}
+.author:hover {
   color: #46bfa9;
 }
