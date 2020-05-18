@@ -20,12 +20,7 @@
 .clearfix {
   clear: both;
 }
-.wrapper {
-  max-width: 1600px;
-  margin: 34px auto;
-  padding-top: 0px;
-  margin-bottom: 0;
-}
+
 .my_main {
   margin-top: 0px;
 }
@@ -33,6 +28,7 @@
 
 .site_header {
   position: relative;
+  margin-top: 33px;
   height: 57px;
 }
 a {
@@ -95,7 +91,7 @@ a {
 .slider {
   position: relative;
   background-color: rgba(0, 0, 0, 0.52);
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: 600px;
 }
 .slider_background {
@@ -115,7 +111,7 @@ a {
   text-align: left;
   letter-spacing: -0.015em;
   position: absolute;
-  top: 200px;
+  top: 201px;
   left: calc(50% - 370px);
 }
 .slider:hover .first_word {
@@ -130,7 +126,7 @@ a {
   text-align: left;
   color: #fff;
   position: absolute;
-  top: 292px;
+  top: 293px;
   left: calc(50% - 370px);
 }
 
