@@ -90,17 +90,15 @@ a {
 
 .slider {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.52);
-  /* max-width: 1600px; */
-  height: 600px;
-}
-.slider_background {
   background-size: 100% 100%;
   background-position: center center;
-  background-image: url(../img/slider.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/slider.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
 }
+
 .my_h2 {
   width: 800px;
   font-size: 60px;
