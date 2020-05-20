@@ -54,7 +54,6 @@ a {
 }
 
 .menu_list {
-  background-color: lightcoral;
   width: 468px;
   position: absolute;
   right: calc(50% - 556px);
