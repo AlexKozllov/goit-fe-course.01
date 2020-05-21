@@ -134,6 +134,7 @@ li {
   justify-content: space-around;
   margin-left: 18px;
 }
+
 .items {
   width: 295px;
 }
@@ -181,11 +182,13 @@ li {
   justify-content: space-between;
   margin-bottom: 79px;
 }
+
 .list_team {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .h3_member {
   font-size: 14px;
@@ -193,7 +196,7 @@ li {
   color: rgb(51, 51, 51);
   text-transform: uppercase;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
 }
 .position {
   font-size: 15px;
@@ -202,7 +205,61 @@ li {
   font-style: italic;
   line-height: 1.6;
   font-weight: 300;
+  animation: shift 0.2s linear;
 }
 .member {
   margin-bottom: 21px;
+  transition: all 0.2s linear;
+  /* position: absolute; */
+}
+.card_hover {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  z-index: 20;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.5) 0%,
+    rgba(243, 129, 129, 0.5) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.2s linear;
+}
+
+.list_team:hover .card_hover {
+  opacity: 1;
+  /* animation: shift 0.2s linear; */
+  transform: translate(-10px, -10px);
+}
+.list_team:hover .member {
+  /* animation: shift 1 linear; */
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+}
+
+.social_icon {
+  padding: 16px;
+  /* width: 55px; */
+  height: 55px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social_list {
+  height: 55px;
+  width: 55px;
+  margin-right: 1px;
+  background-color: #fce38a;
+  text-align: center;
+  transition: background-color 0.2s linear;
+}
+.social_list:hover {
+  background-color: #95e1d3;
 }
