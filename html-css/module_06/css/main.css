@@ -9,6 +9,9 @@
 a {
   text-decoration: none;
 }
+a:visited {
+  color: unset;
+}
 li {
   list-style-type: none;
 }
@@ -262,4 +265,95 @@ li {
 }
 .social_list:hover {
   background-color: #95e1d3;
+}
+
+/*----------------- Footer ----------------*/
+
+hr {
+  border: none;
+  background-color: #e5e5e5;
+  height: 1px;
+}
+.my_footer {
+  max-width: 1201px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.copyright {
+  padding-left: 5px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  /* line-height: 1.2; */
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.author {
+  margin-left: 4px;
+}
+.copyright:hover .author {
+  color: #f38181;
+}
+
+.forma {
+  /* display: block; */
+  /* border: 1px solid #e5e5e5; */
+}
+.e-mail {
+  margin-right: 0;
+  padding-left: 10px;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  color: -internal-light-dark-color(rgb(233, 31, 31), rgb(235, 10, 10));
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #929292;
+  font-style: italic;
+  line-height: 1.6;
+}
+.e-mail::placeholder {
+  color: rgb(204, 204, 204);
+}
+.e-mail:focus {
+  outline-offset: 0px;
+  border: 1px solid #929292;
+  outline: none;
+  border: 1px solid #929292;
+}
+.Subscribe {
+  margin-left: -5px;
+
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.Subscribe:focus {
+  outline-offset: 0px;
+  border: 1px solid #929292;
+  outline: none;
+  border: 1px solid #929292;
+}
+.Subscribe:hover {
+  background-color: #65d1bd;
 }
