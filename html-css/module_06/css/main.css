@@ -16,7 +16,7 @@ li {
   list-style-type: none;
 }
 
-/* Header */
+/*----------------- Header -----------------*/
 
 .site_header {
   /* background-color: aqua; */
@@ -38,11 +38,15 @@ li {
   color: #95e1d3;
   font-weight: bold;
   line-height: 1.2;
-  animation: logo_rotate 1s linear;
+  animation: logo_rotate 3s cubic-bezier(0.58, -0.62, 0.12, 1.48);
   display: block;
 }
 
-@keyframes logo_rotate {
+.logo:focus {
+  animation: logo_scale 1s ease-in-out;
+}
+
+@keyframes logo_scale {
   0% {
     transform: scale(1, 1);
   }
@@ -52,6 +56,15 @@ li {
 
   100% {
     transform: scale(1, 1);
+  }
+}
+
+@keyframes logo_rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(720deg);
   }
 }
 
@@ -81,7 +94,7 @@ li {
   border-bottom: 3px solid #f38181;
 }
 
-/* Section 1 */
+/* -----------------Section 1 --------------------*/
 
 .my_h2 {
   margin-left: auto;
@@ -145,6 +158,17 @@ li {
   height: 32px;
   /* width: 32px; */
 }
+.list_items:hover .icon {
+  animation: logo_icon 2s cubic-bezier(0.58, -0.62, 0.12, 1.48);
+}
+@keyframes logo_icon {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(720deg);
+  }
+}
 .my_h3 {
   font-size: 14px;
   font-family: "Montserrat";
@@ -161,6 +185,8 @@ li {
   line-height: 1.6;
   text-align: left;
 }
+
+/* --------------Section #2 -------------- */
 
 .text_meet_our_team {
   width: 980px;
@@ -223,8 +249,8 @@ li {
   opacity: 0;
   background: linear-gradient(
     90deg,
-    rgba(252, 227, 138, 0.5) 0%,
-    rgba(243, 129, 129, 0.5) 100%
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
   );
   display: flex;
   justify-content: center;
@@ -302,6 +328,7 @@ hr {
 }
 .author {
   margin-left: 4px;
+  transition: color 0.2s linear;
 }
 .copyright:hover .author {
   color: #f38181;
@@ -347,6 +374,7 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  transition: background-color 0.2s linear;
 }
 .Subscribe:focus {
   outline-offset: 0px;
