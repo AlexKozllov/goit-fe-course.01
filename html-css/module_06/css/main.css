@@ -1,5 +1,4 @@
 * {
-  /* box-sizing: content-box; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,7 +18,6 @@ li {
 /*----------------- Header -----------------*/
 
 .site_header {
-  /* background-color: aqua; */
   max-width: 1201px;
   height: 82px;
   margin-left: auto;
@@ -32,7 +30,6 @@ li {
 }
 
 .logo {
-  /* margin-left: 5px; */
   font-size: 30px;
   font-family: "Montserrat";
   color: #95e1d3;
@@ -85,9 +82,7 @@ li {
   line-height: 1.2;
   font-weight: 500;
   transition: color 0.2s linear, border-bottom 0.2s linear;
-  /* text-decoration: underline; */
 }
-
 .nav_link:hover {
   color: #f38181;
   padding-bottom: 7px;
@@ -99,7 +94,6 @@ li {
 .my_h2 {
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 95px; */
   max-width: 1201px;
   font-size: 30px;
   font-family: "Montserrat";
@@ -109,7 +103,6 @@ li {
   text-align: center;
   text-transform: uppercase;
 }
-
 .h2_decorative {
   font-size: 24px;
   font-family: "Kaushan Script";
@@ -129,10 +122,8 @@ li {
 .list {
   max-width: 1201px;
   height: 340px;
-  /* padding-left: 20px; */
   margin-top: 11px;
   margin-bottom: 40px;
-  /* background-color: #f38181; */
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -141,22 +132,18 @@ li {
   justify-content: space-around;
   align-items: center;
 }
-
 .list_items {
   width: 381px;
-  /* margin-bottom: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-left: 18px;
 }
-
 .items {
   width: 295px;
 }
 .icon {
   height: 32px;
-  /* width: 32px; */
 }
 .list_items:hover .icon {
   animation: logo_icon 2s cubic-bezier(0.58, -0.62, 0.12, 1.48);
@@ -239,7 +226,6 @@ li {
 .member {
   margin-bottom: 21px;
   transition: all 0.2s linear;
-  /* position: absolute; */
 }
 .card_hover {
   position: absolute;
@@ -261,21 +247,17 @@ li {
 
 .list_team:hover .card_hover {
   opacity: 1;
-  /* animation: shift 0.2s linear; */
   transform: translate(-10px, -10px);
 }
 .list_team:hover .member {
-  /* animation: shift 1 linear; */
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
 }
 
 .social_icon {
   padding: 16px;
-  /* width: 55px; */
   height: 55px;
 }
-
 .social {
   display: flex;
   flex-direction: row;
@@ -320,7 +302,6 @@ hr {
   font-size: 14px;
   font-family: "Montserrat";
   color: #333333;
-  /* line-height: 1.2; */
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -334,10 +315,6 @@ hr {
   color: #f38181;
 }
 
-.forma {
-  /* display: block; */
-  /* border: 1px solid #e5e5e5; */
-}
 .e-mail {
   margin-right: 0;
   padding-left: 10px;
@@ -363,7 +340,6 @@ hr {
 }
 .Subscribe {
   margin-left: -5px;
-
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
