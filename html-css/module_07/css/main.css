@@ -59,6 +59,7 @@ li {
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 600;
+  /* letter-spacing: 0.1em; */
   transition: color 0.2s linear;
 }
 .nav_link:hover {
@@ -68,7 +69,7 @@ li {
 /* -----------------Section 1 --------------------*/
 
 .service {
-  width: 90.4em;
+  width: 94em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,7 +87,7 @@ li {
   /* font-stretch: condensed; */
   letter-spacing: -0.05em;
 }
-.proin_iaculis {
+.after_h2 {
   /* width: 30.3em; */
   margin-top: 0.4em;
   text-align: center;
@@ -100,21 +101,51 @@ li {
 }
 
 .servisce_article {
+  margin-top: 8em;
   width: 100%;
-  height: 19em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .service_article_list {
-  width: 290em;
-  position: 0 10px;
+  /* width: 290em; */
+  width: 30%;
+  height: 19em;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
+.circle {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.1em;
+  border: solid 3px #fed136;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .list_header {
+  /* margin-top: 10em; */
+  font-size: 1.8em;
+  font-family: "Montserrat_Bold";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  /* line-height: 4.167; */
+  letter-spacing: -0.05em;
+}
+.text-article {
+  font-size: 1.32em;
+  font-family: "Roboto Slab";
+  color: rgb(119, 119, 119);
+  line-height: 1.7;
+  text-align: center;
+  text-indent: 0.2em;
+  /* letter-spacing: -0.01em; */
 }
 /*----------------- Footer ----------------*/
