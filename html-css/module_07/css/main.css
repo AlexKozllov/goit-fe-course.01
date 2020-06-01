@@ -49,6 +49,7 @@ li {
   display: flex;
   flex-direction: row;
   width: 47.9em;
+  /* width: 40%; */
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -80,12 +81,14 @@ li {
   margin-right: auto;
   font-size: 4em;
   font-family: "Montserrat_Bold";
+  /* font-stretch: inherit; */
+
   color: rgb(34, 34, 34);
   /* font-weight: 700; */
   text-transform: uppercase;
   /* line-height: 1.875; */
   /* font-stretch: condensed; */
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
 }
 .after_h2 {
   /* width: 30.3em; */
@@ -148,4 +151,22 @@ li {
   text-indent: 0.2em;
   /* letter-spacing: -0.01em; */
 }
-/*----------------- Footer ----------------*/
+
+/*----------------- Section 2 ----------------*/
+.contact_us {
+  /* width: 140em; */
+  height: 67.4em;
+  margin-top: 11.4em;
+  padding: 10em;
+  background: url(../img/map_image.png) no-repeat right,
+    linear-gradient(130deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background-size: contain;
+}
+
+.h2_color {
+  color: #fff;
+}
+.p_color {
+  margin-top: 0.6em;
+  color: #777;
+}
