@@ -81,30 +81,63 @@
         <p class="after_h2 p_color">
           Proin iaculis purus consequat sem cure.
         </p>
-        <form action="#" method="POST">
-          <table class="forma">
+        <form action="#" method="GET" class="forma">
+          <table class="fields">
             <tr>
               <th>
-                <input type="text" name="name" placeholder="your name*" />
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="your name*"
+                  class="entry_field"
+                />
               </th>
               <th rowspan="3">
-                <input type="text" name="messege" placeholder="your messege*" />
+                <input
+                  type="text"
+                  name="messege"
+                  required
+                  placeholder="your messege*"
+                  class="messege_file"
+                />
               </th>
             </tr>
             <tr>
               <td>
-                <input type="email" name="email" placeholder="your e-mail*" />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="your e-mail*"
+                  class="entry_field"
+                />
               </td>
             </tr>
             <tr>
               <td>
-                <input type="text" name="subject" placeholder="subject*" />
+                <input
+                  type="text"
+                  name="subject"
+                  required
+                  placeholder="subject*"
+                  class="entry_field"
+                />
+              </td>
+            </tr>
+            <tr class="btn_row">
+              <td colspan="2">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="send meassege"
+                  class="btn_submit"
+                />
               </td>
             </tr>
           </table>
         </form>
       </section>
     </main>
-    <footer class="my_footer"></footer>
   </body>
 </html>
