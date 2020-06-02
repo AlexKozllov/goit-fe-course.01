@@ -30,11 +30,11 @@
 @font-face {
   font-family: "Playfair Display";
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   src: local(""),
-    url("../fonts/playfair-display-v20-latin-italic.woff2") format("woff2"),
+    url("../fonts/playfair-display-v20-latin-500italic.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/playfair-display-v20-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/playfair-display-v20-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-slab-regular - latin */
