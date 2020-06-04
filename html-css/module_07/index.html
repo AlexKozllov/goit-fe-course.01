@@ -12,13 +12,15 @@
       <h1>
         <a href="#"><span class="logo">Golden</span> </a>
       </h1>
-      <menu class="menu_list">
-        <li class="menu_link"><a href="#" class="nav_link">home</a></li>
-        <li class="menu_link"><a href="#" class="nav_link">service</a></li>
-        <li class="menu_link"><a href="#" class="nav_link">portfolio</a></li>
-        <li class="menu_link"><a href="#" class="nav_link">about</a></li>
-        <li class="menu_link"><a href="#" class="nav_link">contact</a></li>
-      </menu>
+      <nav>
+        <ul class="menu_list">
+          <li class="menu_link"><a href="#" class="nav_link">home</a></li>
+          <li class="menu_link"><a href="#" class="nav_link">service</a></li>
+          <li class="menu_link"><a href="#" class="nav_link">portfolio</a></li>
+          <li class="menu_link"><a href="#" class="nav_link">about</a></li>
+          <li class="menu_link"><a href="#" class="nav_link">contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="my_main">
@@ -82,9 +84,9 @@
           Proin iaculis purus consequat sem cure.
         </p>
         <form action="#" method="POST" class="forma">
-          <table class="fields">
-            <tr>
-              <th>
+          <div class="box_fields">
+            <div class="fields">
+              <div class="fields_colom">
                 <input
                   type="text"
                   name="name"
@@ -92,21 +94,6 @@
                   placeholder="your name*"
                   class="entry_field"
                 />
-              </th>
-              <th rowspan="3">
-                <textarea
-                  name="messege"
-                  required
-                  id="messege"
-                  cols="30"
-                  rows="10"
-                  placeholder="your messege*"
-                  class="messege_file"
-                ></textarea>
-              </th>
-            </tr>
-            <tr>
-              <td>
                 <input
                   type="email"
                   name="email"
@@ -114,10 +101,6 @@
                   placeholder="your e-mail*"
                   class="entry_field"
                 />
-              </td>
-            </tr>
-            <tr>
-              <td>
                 <input
                   type="text"
                   name="subject"
@@ -125,19 +108,24 @@
                   placeholder="subject*"
                   class="entry_field"
                 />
-              </td>
-            </tr>
-            <tr class="btn_row">
-              <td colspan="2">
-                <input
-                  type="submit"
-                  name="submit"
-                  value="send meassege"
-                  class="btn_submit"
-                />
-              </td>
-            </tr>
-          </table>
+              </div>
+              <textarea
+                name="messege"
+                required
+                id="messege"
+                cols="30"
+                rows="10"
+                placeholder="your messege*"
+                class="messege_file"
+              ></textarea>
+            </div>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            value="send meassege"
+            class="btn_submit"
+          />
         </form>
       </section>
     </main>
