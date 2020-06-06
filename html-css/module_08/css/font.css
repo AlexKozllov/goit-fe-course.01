@@ -1,42 +1,43 @@
+/* montserrat-regular - latin */
 @font-face {
-  font-family: "GreatVibes-Regular";
-  src: url("../fonts/GreatVibes-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat_Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
-    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* montserrat-700 - latin */
 @font-face {
-  font-family: "Montserrat_Bold";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
-    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* ###################################################################### */
+/* =================================================== */
 
+/* roboto-300 - latin */
 @font-face {
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 500;
-  src: local(""),
-    url("../fonts/playfair-display-v20-latin-500italic.woff2") format("woff2"),
-    url("../fonts/playfair-display-v20-latin-500italic.woff") format("woff");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* roboto-regular - latin */
 @font-face {
-  font-family: "Roboto Slab";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
-    url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
