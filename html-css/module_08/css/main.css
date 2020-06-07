@@ -14,7 +14,9 @@ a {
 }
 
 a:visited {
-  color: unset;
+  /* color: unset; */
+  /* color: currentColor; */
+  /* color: inherit; */
 }
 
 li {
@@ -25,22 +27,112 @@ li {
 
 .header {
   min-width: 320px;
+  height: 195px;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.header__log {
-  width: 65px;
+.header__entry {
+  width: 153px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.header__log-in {
-  width: 30px;
-  margin: 20px;
+.header__log_in {
+  width: 50px;
+  height: 35px;
+  /* margin: 20px; */
+  font-size: 14px;
+  font-family: "Montserrat_700";
+  color: rgb(233, 24, 24);
+  font-weight: bold;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
-.header__sign-up {
-  width: 30px;
-  margin: 20px;
+.header__sign_up {
+  width: 90px;
+  height: 35px;
+  border: 3px solid #c41515;
+  border-radius: 17px;
+  /* text-align: center; */
+  /* margin: 20px; */
+  font-size: 14px;
+  font-family: "Montserrat_700";
+  color: rgb(206, 20, 20);
+  /* font-weight: bold; */
+  line-height: 1.2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo_link {
+  font-size: 20px;
+  font-family: "Montserrat_700";
+  color: rgb(221, 10, 10);
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* ======================= body ========================= */
+
+/* =========== section holiday============ */
+
+.holiday {
+  min-width: 320px;
+  height: 540px;
+  margin-top: -195px;
+  background: url(/img/vector_smart_object_320x540.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.holiday__header {
+  margin-top: 87px;
+  font-size: 30px;
+  font-family: "Montserrat_700";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.holiday__text {
+  display: block;
+  margin-top: 10px;
+  padding: 0 40px 0 40px;
+  /* margin: 0 5px 0 5px; */
+  font-size: 18px;
+  font-family: "Roboto_400";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+.holiday__fiend-partner {
+  min-width: 280px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat_700";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
