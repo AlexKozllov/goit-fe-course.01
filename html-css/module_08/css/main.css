@@ -45,37 +45,49 @@ li {
   height: 35px;
   /* margin: 20px; */
   font-size: 14px;
-  font-family: "Montserrat_700";
-  color: rgb(233, 24, 24);
+  font-family: "Montserrat_bold";
+  color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  transition: color 0.2s linear;
 }
+.header__log_in:hover {
+  color: #ff4e50;
+}
+
 .header__sign_up {
   width: 90px;
   height: 35px;
-  border: 3px solid #c41515;
+  border: 3px solid #ffffff;
   border-radius: 17px;
   /* text-align: center; */
   /* margin: 20px; */
   font-size: 14px;
-  font-family: "Montserrat_700";
-  color: rgb(206, 20, 20);
+  font-family: "Montserrat_bold";
+  color: rgb(255, 255, 255);
   /* font-weight: bold; */
   line-height: 1.2;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s linear;
+}
+
+.header__sign_up:hover {
+  color: #ff4e50;
+  border: 3px solid #ff4e50;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .header__logo_link {
   font-size: 20px;
-  font-family: "Montserrat_700";
-  color: rgb(221, 10, 10);
+  font-family: "Montserrat_bold";
+  color: #ffffff;
   /* font-weight: bold; */
   text-transform: uppercase;
   line-height: 1.2;
@@ -100,7 +112,7 @@ li {
 .holiday__header {
   margin-top: 87px;
   font-size: 30px;
-  font-family: "Montserrat_700";
+  font-family: "Montserrat_bold";
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -114,7 +126,7 @@ li {
   padding: 0 40px 0 40px;
   /* margin: 0 5px 0 5px; */
   font-size: 18px;
-  font-family: "Roboto_400";
+  font-family: "Roboto_light";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
@@ -127,7 +139,7 @@ li {
   border-radius: 20px;
   display: block;
   font-size: 14px;
-  font-family: "Montserrat_700";
+  font-family: "Montserrat_bold";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   /* text-align: center; */
@@ -135,4 +147,103 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.2s linear;
 }
+
+.holiday__fiend-partner:hover {
+  background-color: #f82529;
+}
+
+/* ============ section partners =================*/
+
+.partners {
+  min-width: 320px;
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-header {
+  /* margin-bottom: 49px; */
+  font-size: 22px;
+  font-family: "Montserrat_bold";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  /* letter-spacing: -0.04em; */
+}
+
+.partners__link {
+  /* height: 206px; */
+  /* margin-top: 14px; */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.partners__link:hover {
+  /* background-color: rosybrown; */
+  box-shadow: 8px 7px 15px 3px rgba(92, 88, 92, 1);
+}
+
+.partners__foto {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__name {
+  margin-top: 13px;
+  font-size: 14px;
+  font-family: "Montserrat_bold";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.partners__summery {
+  margin-top: 14px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 14px;
+  font-family: "Roboto_light";
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.partners__other {
+  min-width: 280px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  font-family: "Montserrat_bold";
+  color: rgb(255, 78, 80);
+  line-height: 1.2;
+  text-align: center;
+  border: 3px solid #ff4e50;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners__other:hover {
+  color: #fff;
+  background-color: #ff4e50;
+}
+
+/* .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
