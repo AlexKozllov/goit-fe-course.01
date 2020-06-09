@@ -217,7 +217,6 @@ li {
 .partners__other {
   width: 280px;
   height: 40px;
-
   margin-top: 5px;
   height: 40px;
   margin-bottom: 60px;
@@ -256,7 +255,6 @@ li {
     margin-right: 6.4%;
     margin-top: 39px;
   }
-
   .header__logo {
     margin-top: 46px;
     margin-left: 49px;
@@ -266,6 +264,7 @@ li {
     height: 700px;
     margin-top: -195px;
     background: url(../img/vector_smart_object_768x700.jpg) no-repeat;
+    background-size: cover;
   }
   .holiday__header {
     width: 600px;
@@ -300,13 +299,13 @@ li {
     margin-right: 17.4%;
     margin-top: 39px;
   }
-
   .header__logo {
     margin-top: 46px;
     margin-left: 17.3%;
   }
   .holiday {
     background: url(../img/vector_smart_object_1440x700.jpg) no-repeat;
+    background-size: cover;
   }
 }
 
