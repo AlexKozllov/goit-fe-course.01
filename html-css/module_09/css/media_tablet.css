@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .header {
+  /* .header {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -17,7 +17,7 @@
   .header__logo {
     margin-top: 46px;
     margin-left: 17.3%;
-  }
+  } */
   .holiday {
     background: url(../img/vector_smart_object_1440x700.jpg) no-repeat;
     background-size: cover;
@@ -25,21 +25,22 @@
 }
 
 @media (min-width: 1280px) {
-  .partners__list {
+  /* .partners__list {
     width: 1280px;
     display: flex;
     flex-direction: column;
     flex-direction: row;
     justify-content: center;
-  }
+  } */
   .partners__link {
-    margin-top: 14px;
+    /* margin-top: 14px; */
+    width: 240px;
   }
-  .partners__summery {
+  /* .partners__summery {
     margin-bottom: 0px;
-  }
-  .partners__other {
+  } */
+  /* .partners__other {
     width: 190px;
     margin-top: 45px;
   }
-}
+} */
