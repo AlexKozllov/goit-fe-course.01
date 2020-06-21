@@ -132,3 +132,85 @@
 .welcome__learn-more--hover:hover {
   background-color: #fce38a;
 }
+
+/* =========== Section AMAZING SERVICES ========== */
+
+.services {
+  max-width: 1204px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services__header-beafor {
+  margin-top: 45px;
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+}
+
+.services__header-text {
+  margin-top: 14px;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.services__header-text::after {
+  content: "____";
+  display: block;
+  margin-top: 5px;
+  color: #f38181;
+}
+
+.services__list {
+  margin-top: 50px;
+  /* height: 255px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+}
+
+.services__item {
+  width: 381px;
+  margin: 10px 9px 0 9px;
+  margin-bottom: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.services__item-icon {
+  margin: 0 20px;
+  width: 60px;
+  height: 31px;
+  fill: #95e1d3;
+}
+
+.services__item-header {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: -0.05em;
+}
+
+.services__item-text {
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+}
