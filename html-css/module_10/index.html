@@ -3,8 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/img/sprite.svg" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>MoGo</title>
   </head>
-  <body></body>
+  <body>
+    <header class="my_header">
+      <div class="site-logo">
+        <a href="#" class="site-logo__link">MoGo</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--hover">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--hover">Service</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--hover">work</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--hover">blog</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--hover">contact</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link"
+              ><svg class="main-nav__icon-header main-nav__icon-header--hover">
+                <use xlink:href="./img/sprite.svg#SHOPPING_CART"></use></svg
+            ></a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link"
+              ><svg class="main-nav__icon-header main-nav__icon-header--hover">
+                <use xlink:href="./img/sprite.svg#MAGNIFYING_GLASS"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <svg class="icon-box">
+      <use xlink:href="./img/sprite.svg#COMPUTER_OK"></use>
+    </svg> -->
+  </body>
 </html>
