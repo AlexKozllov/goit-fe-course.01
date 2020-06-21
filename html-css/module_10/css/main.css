@@ -16,14 +16,14 @@
 .site-logo__link {
   font-size: 30px;
   font-family: "Montserrat";
-  color: rgb(156, 36, 36);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   /* text-transform: uppercase; */
   line-height: 1.7;
 }
 
 .main-nav {
-  /* width: 621px; */
+  width: 51.6%;
 }
 .main-nav__list {
   width: 621px;
@@ -44,8 +44,7 @@
   height: 29px;
   font-size: 14px;
   font-family: "Montserrat";
-  color: rgb(252, 227, 138);
-  color: rgb(63, 53, 15);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
@@ -68,4 +67,68 @@
 }
 .main-nav__icon-header--hover:hover {
   fill: #fce38a;
+}
+
+/* ====================== Section WELCOME +++++++++============= */
+
+.welcome {
+  height: 1000px;
+  margin: 0 auto;
+  margin-top: -66px;
+  background: linear-gradient(
+      180deg,
+      rgba(232, 129, 130, 0.9) 0%,
+      rgba(239, 217, 138, 0.9) 100%
+    ),
+    url(../img/Layer_15.jpg) no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .welcome {
+    background: url(../img/Layer_15@2x.jpg) no-repeat;
+  }
+}
+
+.welcome__header {
+  margin-bottom: 30px;
+  font-size: 72px;
+  font-family: "Kaushan Script";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.welcome__text {
+  width: 800px;
+  font-size: 150px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  margin-bottom: 118px;
+}
+
+.welcome__learn-more {
+  width: 160px;
+  height: 40px;
+  border: 3px solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.welcome__learn-more--hover:hover {
+  background-color: #fce38a;
 }
