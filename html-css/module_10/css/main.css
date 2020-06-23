@@ -11,8 +11,6 @@
   background: #ddd;
 }
 
-.site-logo {
-}
 .site-logo__link {
   font-size: 30px;
   font-family: "Montserrat";
@@ -75,6 +73,7 @@
   height: 1000px;
   margin: 0 auto;
   margin-top: -66px;
+  margin-bottom: 45px;
   background: linear-gradient(
       180deg,
       rgba(232, 129, 130, 0.9) 0%,
@@ -90,7 +89,12 @@
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .welcome {
-    background: url(../img/Layer_15@2x.jpg) no-repeat;
+    background: linear-gradient(
+        180deg,
+        rgba(232, 129, 130, 0.9) 0%,
+        rgba(239, 217, 138, 0.9) 100%
+      ),
+      url(../img/Layer_15@2x.jpg) no-repeat;
   }
 }
 
@@ -143,7 +147,7 @@
 }
 
 .services__header-beafor {
-  margin-top: 45px;
+  /* margin-top: 45px; */
   font-size: 24px;
   font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
@@ -213,4 +217,211 @@
   color: rgb(153, 153, 153);
   line-height: 1.6;
   text-align: left;
+}
+
+/* =========== Section MEET OUR TEAM ========== */
+
+.our_team {
+  max-width: 1204px;
+  margin: 0 auto;
+  margin-top: 4px;
+  text-align: center;
+  display: block;
+}
+
+.our_team__text {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 36px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.our_team__list {
+  margin-top: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.our_team_name {
+  margin-top: 24px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.our_team_position {
+  margin-top: 7px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.our_team__item {
+  position: relative;
+}
+.our_team_photo {
+  width: 320px;
+  height: 470px;
+  display: block;
+  transition: all 0.2s linear;
+}
+/* ================ Card_Hover ================== */
+.card_hover {
+  width: 380px;
+  height: 470px;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 129, 130, 0.9) 0%,
+    rgba(239, 217, 138, 0.9) 100%
+  );
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s linear;
+}
+
+.cacd_hover__item-icon {
+  width: 25px;
+  height: 25px;
+  fill: #f38181;
+  transition: fill 0.2s linear;
+}
+
+.card_hover__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cacd_hover__item {
+  width: 56px;
+  height: 56px;
+  margin: 1px;
+}
+
+.our_team__item:hover .our_team_photo {
+  transform: translate(-10px, -10px);
+}
+
+.our_team__item:hover .card_hover {
+  box-shadow: 10px 10px #95e1d3;
+  opacity: 1;
+  transform: translate(-10px, -10px);
+}
+
+.card_holder__link {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fce38a;
+}
+.card_holder__link:hover {
+  background: #f38181;
+}
+.card_holder__link:hover .cacd_hover__item-icon {
+  fill: #fff;
+}
+/*----------------- Footer ----------------*/
+
+hr {
+  border: none;
+  background-color: #e5e5e5;
+  height: 1px;
+}
+.my_footer {
+  max-width: 1201px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.copyright {
+  padding-left: 5px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.author {
+  margin-left: 4px;
+  transition: color 0.2s linear;
+}
+.copyright:hover .author {
+  color: #f38181;
+}
+
+.e-mail {
+  margin-right: 0;
+  padding-left: 10px;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  color: -internal-light-dark-color(rgb(233, 31, 31), rgb(235, 10, 10));
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #929292;
+  font-style: italic;
+  line-height: 1.6;
+}
+.e-mail::placeholder {
+  color: rgb(204, 204, 204);
+}
+.e-mail:focus {
+  outline-offset: 0px;
+  border: 1px solid #929292;
+  outline: none;
+  border: 1px solid #929292;
+}
+.Subscribe {
+  margin-left: -5px;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition: background-color 0.2s linear;
+}
+.Subscribe:focus {
+  outline-offset: 0px;
+  border: 1px solid #929292;
+  outline: none;
+  border: 1px solid #929292;
+}
+.Subscribe:hover {
+  background-color: #65d1bd;
 }
