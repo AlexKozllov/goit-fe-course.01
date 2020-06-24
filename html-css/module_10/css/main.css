@@ -342,6 +342,7 @@
 /*----------------- Footer ----------------*/
 
 hr {
+  margin-top: 80px;
   border: none;
   background-color: #e5e5e5;
   height: 1px;
@@ -352,7 +353,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
-.container {
+.footer__box {
   height: 65px;
   display: flex;
   flex-direction: row;
@@ -361,7 +362,7 @@ hr {
   align-content: center;
 }
 
-.copyright {
+.footer__copyright {
   padding-left: 5px;
   font-size: 14px;
   font-family: "Montserrat";
@@ -371,15 +372,15 @@ hr {
   flex-direction: row;
   align-items: center;
 }
-.author {
+.copyright__author {
   margin-left: 4px;
   transition: color 0.2s linear;
 }
-.copyright:hover .author {
+.copyright__author:hover .author {
   color: #f38181;
 }
 
-.e-mail {
+.footer__e-mail {
   margin-right: 0;
   padding-left: 10px;
   width: 230px;
@@ -393,16 +394,16 @@ hr {
   font-style: italic;
   line-height: 1.6;
 }
-.e-mail::placeholder {
+.footer__e-mail::placeholder {
   color: rgb(204, 204, 204);
 }
-.e-mail:focus {
+.footer__e-mail:focus {
   outline-offset: 0px;
   border: 1px solid #929292;
   outline: none;
   border: 1px solid #929292;
 }
-.Subscribe {
+.footer__subscribe {
   margin-left: -5px;
   width: 150px;
   height: 40px;
@@ -416,12 +417,12 @@ hr {
   line-height: 1.2;
   transition: background-color 0.2s linear;
 }
-.Subscribe:focus {
+.footer__subscribe:focus {
   outline-offset: 0px;
   border: 1px solid #929292;
   outline: none;
   border: 1px solid #929292;
 }
-.Subscribe:hover {
+.footer__subscribe:hover {
   background-color: #65d1bd;
 }
