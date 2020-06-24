@@ -1,12 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*================ Header ================*/
 .my_header {
   max-width: 1204px;
-  /* margin-top: 20px; */
   height: 66px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   background: #ddd;
 }
@@ -16,7 +31,6 @@
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
-  /* text-transform: uppercase; */
   line-height: 1.7;
 }
 
@@ -25,17 +39,33 @@
 }
 .main-nav__list {
   width: 621px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 .main-nav__item {
-  /* width: 60px; */
-  /* height: 43px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 .main-nav__link {
@@ -47,9 +77,9 @@
   text-transform: uppercase;
   line-height: 1.2;
   border-bottom: 0px solid #fce38a;
+  -webkit-transition: border-bottom 0.2s linear, color 0.2s linear;
+  -o-transition: border-bottom 0.2s linear, color 0.2s linear;
   transition: border-bottom 0.2s linear, color 0.2s linear;
-
-  /* text-align: center; */
 }
 
 .main-nav__link--hover:hover {
@@ -61,6 +91,8 @@
   width: 18px;
   height: 18px;
   fill: #ffffff;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
   transition: fill 0.2s linear;
 }
 .main-nav__icon-header--hover:hover {
@@ -74,6 +106,20 @@
   margin: 0 auto;
   margin-top: -66px;
   margin-bottom: 45px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(232, 129, 130, 0.9)),
+      to(rgba(239, 217, 138, 0.9))
+    ),
+    url(../img/Layer_15.jpg) no-repeat;
+  background: -o-linear-gradient(
+      top,
+      rgba(232, 129, 130, 0.9) 0%,
+      rgba(239, 217, 138, 0.9) 100%
+    ),
+    url(../img/Layer_15.jpg) no-repeat;
   background: linear-gradient(
       180deg,
       rgba(232, 129, 130, 0.9) 0%,
@@ -81,14 +127,37 @@
     ),
     url(../img/Layer_15.jpg) no-repeat;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .welcome {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(232, 129, 130, 0.9)),
+        to(rgba(239, 217, 138, 0.9))
+      ),
+      url(../img/Layer_15@2x.jpg) no-repeat;
+    background: -o-linear-gradient(
+        top,
+        rgba(232, 129, 130, 0.9) 0%,
+        rgba(239, 217, 138, 0.9) 100%
+      ),
+      url(../img/Layer_15@2x.jpg) no-repeat;
     background: linear-gradient(
         180deg,
         rgba(232, 129, 130, 0.9) 0%,
@@ -121,9 +190,18 @@
   width: 160px;
   height: 40px;
   border: 3px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 14px;
   font-family: "Montserrat";
@@ -147,7 +225,6 @@
 }
 
 .services__header-beafor {
-  /* margin-top: 45px; */
   font-size: 24px;
   font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
@@ -174,19 +251,30 @@
 
 .services__list {
   margin-top: 50px;
-  /* height: 255px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* align-items: stretch; */
 }
 
 .services__item {
   width: 381px;
   margin: 10px 9px 0 9px;
   margin-bottom: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -242,8 +330,15 @@
 
 .our_team__list {
   margin-top: 89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -274,24 +369,49 @@
   width: 320px;
   height: 470px;
   display: block;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 /* ================ Card_Hover ================== */
 .card_hover {
   width: 380px;
   height: 470px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(232, 129, 130, 0.9)),
+    to(rgba(239, 217, 138, 0.9))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(232, 129, 130, 0.9) 0%,
+    rgba(239, 217, 138, 0.9) 100%
+  );
   background: linear-gradient(
     180deg,
     rgba(232, 129, 130, 0.9) 0%,
     rgba(239, 217, 138, 0.9) 100%
   );
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   top: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -299,13 +419,24 @@
   width: 25px;
   height: 25px;
   fill: #f38181;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
   transition: fill 0.2s linear;
 }
 
 .card_hover__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .cacd_hover__item {
@@ -315,21 +446,35 @@
 }
 
 .our_team__item:hover .our_team_photo {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
 }
 
 .our_team__item:hover .card_hover {
+  -webkit-box-shadow: 10px 10px #95e1d3;
   box-shadow: 10px 10px #95e1d3;
   opacity: 1;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
 }
 
 .card_holder__link {
   width: 56px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #fce38a;
 }
@@ -355,10 +500,19 @@ hr {
 }
 .footer__box {
   height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -368,12 +522,21 @@ hr {
   font-family: "Montserrat";
   color: #333333;
   font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .copyright__author {
   margin-left: 4px;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 .copyright__author:hover .author {
@@ -393,6 +556,18 @@ hr {
   color: #929292;
   font-style: italic;
   line-height: 1.6;
+}
+.footer__e-mail::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+.footer__e-mail::-moz-placeholder {
+  color: rgb(204, 204, 204);
+}
+.footer__e-mail:-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+.footer__e-mail::-ms-input-placeholder {
+  color: rgb(204, 204, 204);
 }
 .footer__e-mail::placeholder {
   color: rgb(204, 204, 204);
@@ -415,6 +590,8 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 .footer__subscribe:focus {
