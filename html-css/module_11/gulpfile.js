@@ -9,7 +9,7 @@ const paths = require('./gulp/paths');
 
 const serve = () => {
   return browserSync.init({
-    server: 'build',
+    server: 'build/html-css/module_11',
     notify: false,
     open: false,
     cors: true,
